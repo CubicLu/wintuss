@@ -243,34 +243,71 @@ x-init="$watch('darkMode', val => document.documentElement.classList.toggle('dar
                 </div>
                 <div class="space-y-4" x-data="{ open: 1 }" data-aos="fade-up">
                     <!-- FAQ Item 1 -->
-                    <div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
-                        <button @click="open = (open === 1 ? 0 : 1)" class="w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Wie lange dauert eine typische Badsanierung?</h3>
-                            <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 1 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                        </button>
-                        <div x-show="open === 1" x-collapse>
-                            <p class="mt-4 text-slate-600 dark:text-slate-400">Eine komplette Badsanierung dauert in der Regel zwischen 2 und 3 Wochen, abhängig vom Umfang der Arbeiten und der Trocknungszeit für Materialien wie Estrich und Putz.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ Item 2 -->
-                    <div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
-                        <button @click="open = (open === 2 ? 0 : 2)" class="w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Bieten Sie eine kostenlose Erstberatung an?</h3>
-                            <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 2 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                        </button>
-                        <div x-show="open === 2" x-collapse>
-                            <p class="mt-4 text-slate-600 dark:text-slate-400">Ja, selbstverständlich. Wir besuchen Sie gerne vor Ort, um Ihr Projekt zu besprechen, Ihre Wünsche aufzunehmen und Ihnen ein unverbindliches, detailliertes Angebot zu erstellen.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ Item 3 -->
-                    <div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
-                        <button @click="open = (open === 3 ? 0 : 3)" class="w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Arbeiten Sie mit festen Preisen?</h3>
-                            <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 3 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                        </button>
-                        <div x-show="open === 3" x-collapse>
-                            <p class="mt-4 text-slate-600 dark:text-slate-400">Wir stehen für Transparenz und faire Preise. Unsere Angebote sind detailliert aufgeschlüsselt, sodass Sie genau wissen, welche Kosten auf Sie zukommen. Wir arbeiten auf Basis dieser Angebote, um Ihnen Kostensicherheit zu geben.</p>
-                        </div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
+    <button @click="open = (open === 1 ? 0 : 1)" class="w-full text-left flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Wie lange dauert eine typische Badsanierung?</h3>
+        <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 1 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+    </button>
+    <div x-show="open === 1" x-collapse>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">Eine komplette Badsanierung dauert in der Regel zwischen 2 und 3 Wochen, abhängig vom Umfang der Arbeiten und der Trocknungszeit für Materialien wie Estrich und Putz.</p>
+    </div>
+</div>
+
+<!-- FAQ Item 2 -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
+    <button @click="open = (open === 2 ? 0 : 2)" class="w-full text-left flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Bieten Sie eine kostenlose Erstberatung an?</h3>
+        <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 2 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+    </button>
+    <div x-show="open === 2" x-collapse>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">Ja, selbstverständlich. Wir besuchen Sie gerne vor Ort, um Ihr Projekt zu besprechen, Ihre Wünsche aufzunehmen und Ihnen ein unverbindliches, detailliertes Angebot zu erstellen.</p>
+    </div>
+</div>
+
+<!-- FAQ Item 3 -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
+    <button @click="open = (open === 3 ? 0 : 3)" class="w-full text-left flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Arbeiten Sie mit festen Preisen?</h3>
+        <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 3 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+    </button>
+    <div x-show="open === 3" x-collapse>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">Wir stehen für Transparenz und faire Preise. Unsere Angebote sind detailliert aufgeschlüsselt, sodass Sie genau wissen, welche Kosten auf Sie zukommen. Wir arbeiten auf Basis dieser Angebote, um Ihnen Kostensicherheit zu geben.</p>
+    </div>
+</div>
+
+<!-- FAQ Item 4 -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
+    <button @click="open = (open === 4 ? 0 : 4)" class="w-full text-left flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Muss ich während der Renovierung aus der Wohnung ausziehen?</h3>
+        <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 4 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+    </button>
+    <div x-show="open === 4" x-collapse>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">In den meisten Fällen können Sie während der Renovierung in der Wohnung bleiben. Bei umfangreichen Arbeiten, insbesondere im Bad oder in der Küche, kann es jedoch sinnvoll sein, vorübergehend umzuziehen.</p>
+    </div>
+</div>
+
+<!-- FAQ Item 5 -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
+    <button @click="open = (open === 5 ? 0 : 5)" class="w-full text-left flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Kümmern Sie sich auch um Genehmigungen und Bauanträge?</h3>
+        <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 5 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+    </button>
+    <div x-show="open === 5" x-collapse>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">Ja, falls Genehmigungen erforderlich sind, übernehmen wir gerne die gesamte Organisation und Einreichung der Unterlagen bei den zuständigen Behörden.</p>
+    </div>
+</div>
+
+<!-- FAQ Item 6 -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-md">
+    <button @click="open = (open === 6 ? 0 : 6)" class="w-full text-left flex justify-between items-center">
+        <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-100">Welche Materialien verwenden Sie für Renovierungen?</h3>
+        <svg class="w-6 h-6 transition-transform" :class="{ 'rotate-180': open === 6 }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+    </button>
+    <div x-show="open === 6" x-collapse>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">Wir verwenden ausschließlich hochwertige und langlebige Materialien von renommierten Herstellern, um Qualität und Nachhaltigkeit zu gewährleisten.</p>
+    </div>
+</div>
+
                     </div>
                 </div>
             </div>
